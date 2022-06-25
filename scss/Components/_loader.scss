@@ -1,8 +1,9 @@
 .loading {
   position: absolute;
-  z-index: 1001;
-  left: 38%;
+  left: 50%;
   top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
   &--bg {
     width: 100vw;
     height: 100vh;
@@ -11,33 +12,10 @@
   span {
     display: block;
     background-color: #e6e6e6;
+    
     height: 1px;
     animation: loadingAnimation 2s linear infinite;
     animation-direction: alternate;
-  }
-}
-
-@include responsive_992() {
-  .loading {
-    left: 28%;
-  }
-}
-
-@include responsive_768() {
-  .loading {
-    left: 22%;
-  }
-}
-
-@include responsive_575() {
-  .loading {
-    left: 8%;
-  }
-}
-
-@include responsive_475() {
-  .loading {
-    left: 0;
   }
 }
 

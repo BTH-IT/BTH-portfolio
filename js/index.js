@@ -19,5 +19,5 @@ function showPage() {
   document.querySelector(".loaded").style.display = "block";
 }
 
-// setTimeout(showAnimationLoading, 3000);
-// setTimeout(showPage, 3200);
+setTimeout(showAnimationLoading, 3000);
+setTimeout(showPage, 3200);
