@@ -1,0 +1,33 @@
+.btn {
+  margin-top: 14px;
+  margin-right: 14px;
+  @include styleButton(18px, $white, 400, 1px, $green, $green, 30px, 10px);
+}
+
+.btn--hover {
+  &:hover {
+    background-color: #005235;
+  }
+}
+
+.btn-bg-transparent--hover {
+  &:hover {
+    background-color: transparent;
+    color: $black
+  }
+}
+
+.btn.btn-bg-transparent {
+  background-color: transparent;
+  color: $black;
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
+}
+
+.btn-light--hover {
+  &:hover {
+    filter: brightness(1.2);
+  }
+}

@@ -1,0 +1,128 @@
+.project {
+  width: 80%;
+  margin: 126px auto;
+  &_title {
+    @extend %titleWord;
+  }
+
+  &_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px 0;
+    margin-top: calc(110px - 38px + 10px);
+    &_cell {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 20px;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+      padding: 32px 48px;
+      border-left: 2px solid $green;
+      position: relative;
+      color: #777;
+      &_left {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.2s linear;
+        &:hover {
+          filter: brightness(0.8);
+        }
+        img {
+          @extend %objectFitImage;
+          object-fit: fill;
+        }
+      }
+      &_right {
+        h1 {
+          margin: 0 0 18px 0;
+          @include fontStyle(20px, $black, 600);
+          transition: all 0.2s linear;
+        }
+        h2 {
+          margin: 0 0 9px 0;
+          @include fontStyle(16px, $black, 600);
+        }
+        span {
+          margin-bottom: 27px;
+          font-size: 14px;
+          display: block;
+        }
+      }
+
+      &_link {
+        text-decoration: none;
+        &:hover {
+          h1 {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@include responsive_992() {
+  .project {
+    &_container {
+      &_cell {
+        gap: 40px 0;
+        grid-template-columns: repeat(1, 1fr);
+
+        &_right {
+          h1 {
+            font-size: 24px;
+          }
+          h2 {
+            font-size: 18px;
+          }
+
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive_575() {
+  .project {
+    &_title {
+      font-size: 28px;
+      span {
+        font-size: 70px;
+        bottom: -16px;
+      }
+    }
+
+    &_btn {
+      margin-right: 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@include responsive_475() {
+  .project {
+    &_container {
+      &_cell {
+        &_right {
+          h1 {
+            font-size: 20px;
+          }
+          h2 {
+            font-size: 16px;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

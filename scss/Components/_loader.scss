@@ -1,0 +1,27 @@
+.loading {
+  position: absolute;
+  z-index: 1001;
+  left: 38%;
+  top: 50%;
+  &--bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #101010;
+  }
+  span {
+    display: block;
+    background-color: #e6e6e6;
+    height: 1px;
+    animation: loadingAnimation 2s linear infinite;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes loadingAnimation {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 400px;
+  }
+}

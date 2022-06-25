@@ -1,0 +1,258 @@
+.resume {
+  @extend %widthCenter;
+  padding-top: 96px;
+  background-color: $white;
+  &_info {
+    @extend %flexCenter;
+    margin-bottom: 126px;
+    &_image {
+      width: 400px;
+      height: 500px;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      flex-shrink: 0;
+      img {
+        @extend %objectFitImage;
+      }
+    }
+
+    &_content {
+      padding: 10px;
+      margin-left: 28px;
+      h2 {
+        margin-bottom: 20px;
+        @include fontStyle(24px, $green, 700)
+      }
+      h1 {
+        line-height: 42px;
+        @include fontStyle(32px, $black, 700)
+      }
+      p {
+        line-height: 26px;
+        margin-bottom: 14px;
+        @include fontStyle(16px, #777, 400)
+      }
+    }
+
+    &_personal {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      p {
+        @include fontStyle(16px, #777, 400)
+      }
+      .title {
+        margin-right: 14px;
+        @include fontStyle(16px, $black, 500)
+      }
+    }
+  }
+
+  &_skill {
+    &_title {
+      @extend %titleWord;
+    }
+
+    &_container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px 20px;
+      margin-top: calc(110px - 38px + 10px);
+      &_cell {
+        padding: 38px 42px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        color: #777;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s linear;
+        i, svg {
+          @include fontStyle(58px, $green, 400);
+          margin-bottom: 22px;
+          transition: all 0.3s linear;
+        }
+        h1 {
+          @include fontStyle(20px, $black, 500);
+          margin: 0 0 14px 0;
+          color: $black;
+        }
+
+        &:hover {
+          border-bottom-color: $green;
+          i, svg {
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+  }
+
+  &_education, &_experience {
+    margin-top: 126px;
+    &_title {
+      @extend %titleWord;
+    }
+
+    &_container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 50px;
+      margin-top: calc(110px - 38px + 10px);
+      &_cell {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+        padding: 32px 48px;
+        border-left: 2px solid $green;
+        position: relative;
+        color: #777;
+        span {
+          position: absolute;
+          margin-top: 4px;
+          left: 0;
+        }
+        h2 {
+          margin: 0 0 9px 0;
+          @include fontStyle(18px, $black, 500);
+        }
+        p {
+          margin: 0 0 7px 0;
+        }
+        span:before, span:after {
+          content: "";
+          display: block;
+          position: absolute;
+        }
+        span:before {
+          left: -1px;
+          width: 16px;
+          height: 16px;
+          background-color: $green;
+        }
+        span:after {
+          left: 15px;
+          border: 8px solid transparent;
+          border-left-color: $green;
+        }
+      }
+    }
+  }
+}
+
+hr {
+  margin: 6px 0;
+}
+
+//Responsive
+@include responsive_1200() {
+  .resume {
+    &_info {
+      display: block;
+      &_image {
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        padding: 0;
+        box-shadow: none;
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+@include responsive_992() {
+  .resume {
+    &_info {
+      &_personal {
+        display: block;
+      }
+    }
+
+    &_skill {
+      &_container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@include responsive_768() {
+  .resume {
+    &_education, &_experience {
+      &_container {
+        margin-top: 41px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      &_title {
+        font-size: 24px;
+        span {
+          font-size: 54px;
+          bottom: -12px;
+        }
+      }
+    }
+  }
+}
+
+@include responsive_575() {
+  .resume {
+    &_info {
+      &_content {
+        h1 {
+          font-size: 22px;
+          line-height: 32px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      &_personal {
+        .title {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &_skill {
+      &_container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      &_title {
+        font-size: 28px;
+        span {
+          font-size: 90px;
+          bottom: -26px;
+        }
+      }
+    }
+
+    &_education, &_experience {
+      &_container {
+        &_cell {
+          span, p {
+            font-size: 12px;
+          }
+          h2 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive_475() {
+  .resume {
+    &_info {
+      &_personal {
+        .title, p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

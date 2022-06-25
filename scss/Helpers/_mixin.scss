@@ -1,0 +1,52 @@
+@mixin fontStyle($fsize, $fcolor, $fweight) {
+  color: $fcolor;
+  font-weight: $fweight;
+  font-size: $fsize;
+}
+
+@mixin styleButton($fsize, $fcolor, $fweight, $bdsize, $bgColor, $bdColor, $px, $py) {
+  @include fontStyle($fsize, $fcolor, $fweight);
+  background-color: $bgColor;
+  border: $bdsize solid $bdColor;
+  padding: $py $px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+} 
+
+$res_475 : "only screen and (max-width: 475px)";
+$res_575 : "only screen and (max-width: 575px)";
+$res_768 : "only screen and (max-width: 768px)";
+$res_992 : "only screen and (max-width: 992px)";
+$res_1200 : "only screen and (max-width: 1200px)";
+ 
+@mixin responsive_475() {
+    @media #{$res_475} {
+        @content;
+    }
+}
+
+@mixin responsive_575() {
+    @media #{$res_575} {
+        @content;
+    }
+}
+
+@mixin responsive_768() {
+    @media #{$res_768} {
+        @content;
+    }
+}
+
+@mixin responsive_992() {
+    @media #{$res_992} {
+        @content;
+    }
+}
+
+@mixin responsive_1200() {
+    @media #{$res_1200} {
+        @content;
+    }
+}

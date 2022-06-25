@@ -1,0 +1,32 @@
+.inputField {
+  width: 100%;
+  background-color: #f2f2f2;
+  border: none;
+  border-bottom: 2px solid $black;
+  @include fontStyle(16px, #777, 500);
+  outline: none;
+  padding: 10px 16px;
+  height: 44px;
+  margin-bottom: 25px;
+  font-family: inherit;
+  transition: all 0.3s linear;
+  &:focus {
+    border-bottom-color: $green;
+  }
+}
+
+.textareaField {
+  width: 100%;
+  background-color: #f2f2f2;
+  border: none;
+  border-bottom: 2px solid $black;
+  @include fontStyle(16px, #777, 500);
+  outline: none;
+  padding: 10px 16px;
+  resize: vertical;
+  font-family: inherit;
+  transition: all 0.3s linear;
+  &:focus {
+    border-bottom-color: $green;
+  }
+}
