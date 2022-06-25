@@ -20,6 +20,7 @@ $res_575 : "only screen and (max-width: 575px)";
 $res_768 : "only screen and (max-width: 768px)";
 $res_992 : "only screen and (max-width: 992px)";
 $res_1200 : "only screen and (max-width: 1200px)";
+$res_1600 : "only screen and (max-width: 1600px)";
  
 @mixin responsive_475() {
     @media #{$res_475} {
@@ -47,6 +48,12 @@ $res_1200 : "only screen and (max-width: 1200px)";
 
 @mixin responsive_1200() {
     @media #{$res_1200} {
+        @content;
+    }
+}
+
+@mixin responsive_1600() {
+    @media #{$res_1600} {
         @content;
     }
 }

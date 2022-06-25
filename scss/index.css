@@ -281,9 +281,15 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 450px;
-  height: 600px;
+  width: 600px;
+  height: 800px;
   z-index: 0;
+}
+@media only screen and (max-width: 1600px) {
+  .header_thumb {
+    width: 450px;
+    height: 600px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .header {
