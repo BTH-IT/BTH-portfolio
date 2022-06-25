@@ -904,6 +904,26 @@ hr {
           animation-direction: alternate;
 }
 
+@media only screen and (max-width: 992px) {
+  .loading {
+    left: 28%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .loading {
+    left: 22%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .loading {
+    left: 8%;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .loading {
+    left: 0;
+  }
+}
 @-webkit-keyframes loadingAnimation {
   0% {
     width: 0px;
@@ -912,7 +932,6 @@ hr {
     width: 400px;
   }
 }
-
 @keyframes loadingAnimation {
   0% {
     width: 0px;

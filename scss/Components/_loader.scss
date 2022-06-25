@@ -17,6 +17,30 @@
   }
 }
 
+@include responsive_992() {
+  .loading {
+    left: 28%;
+  }
+}
+
+@include responsive_768() {
+  .loading {
+    left: 22%;
+  }
+}
+
+@include responsive_575() {
+  .loading {
+    left: 8%;
+  }
+}
+
+@include responsive_475() {
+  .loading {
+    left: 0;
+  }
+}
+
 @keyframes loadingAnimation {
   0% {
     width: 0px;
