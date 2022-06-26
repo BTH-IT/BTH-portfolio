@@ -32,6 +32,14 @@ body {
   overflow-x: hidden;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .typed-cursor {
   font-weight: 400;
 }
