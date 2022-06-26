@@ -32,14 +32,6 @@ body {
   overflow-x: hidden;
 }
 
-::-moz-selection {
-  background-color: red;
-}
-
-::selection {
-  background-color: red;
-}
-
 input,
 textarea,
 button,
