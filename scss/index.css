@@ -2,6 +2,7 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 ::-moz-selection {
@@ -28,6 +29,7 @@ body {
   line-height: 1.3;
   font-family: "Poppins", sans-serif;
   cursor: none;
+  overflow: hidden;
 }
 
 .typed-cursor {
