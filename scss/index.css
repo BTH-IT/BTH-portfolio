@@ -452,7 +452,6 @@ body {
   }
 }
 .resume {
-  overflow-x: hidden;
   padding-top: 96px;
   background-color: #FFF;
 }
@@ -675,7 +674,6 @@ hr {
   }
 }
 .project {
-  overflow-x: hidden;
   width: 80%;
   margin: 126px auto;
 }
