@@ -1,5 +1,5 @@
 .contact {
-  overflow-x: hidden;
+  
   @extend %widthCenter;
   margin-bottom: 100px;
   &_title {
@@ -102,6 +102,18 @@
   }
 }
 
-@include responsive_475() {
+@include responsive_375() {
+  .contact {
+    &_container {
+      margin-top: 41px;
+    }
     
+    &_title {
+      font-size: 24px;
+      span {
+        font-size: 46px;
+        bottom: -8px;
+      }
+    }
+  }
 }

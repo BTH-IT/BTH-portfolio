@@ -15,13 +15,20 @@
   display: inline-block;
 } 
 
+$res_375 : "only screen and (max-width: 375px)";
 $res_475 : "only screen and (max-width: 475px)";
 $res_575 : "only screen and (max-width: 575px)";
 $res_768 : "only screen and (max-width: 768px)";
 $res_992 : "only screen and (max-width: 992px)";
 $res_1200 : "only screen and (max-width: 1200px)";
 $res_1600 : "only screen and (max-width: 1600px)";
- 
+
+@mixin responsive_375() {
+    @media #{$res_375} {
+        @content;
+    }
+}
+
 @mixin responsive_475() {
     @media #{$res_475} {
         @content;

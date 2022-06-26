@@ -100,7 +100,6 @@ body {
 }
 
 .header {
-  overflow-x: hidden;
   background-image: linear-gradient(to right, #E7E7E7 40%, #D7D7D7 100%);
   height: 100vh;
   position: relative;
@@ -288,6 +287,18 @@ body {
   height: 800px;
   z-index: 0;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  cursor: pointer;
+}
+
 .show {
   display: block !important;
 }
@@ -441,7 +452,6 @@ body {
   }
 }
 .resume {
-  overflow-x: hidden;
   padding-top: 96px;
   background-color: #FFF;
 }
@@ -649,8 +659,19 @@ hr {
     font-size: 12px;
   }
 }
+@media only screen and (max-width: 375px) {
+  .resume_skill_container {
+    margin-top: 41px;
+  }
+  .resume_skill_title {
+    font-size: 24px;
+  }
+  .resume_skill_title span, .resume_education_title span, .resume_experience_title span {
+    font-size: 46px;
+    bottom: -8px;
+  }
+}
 .project {
-  overflow-x: hidden;
   width: 80%;
   margin: 126px auto;
 }
@@ -749,8 +770,22 @@ hr {
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 375px) {
+  .project_container {
+    margin-top: 41px;
+  }
+  .project_title {
+    font-size: 24px;
+  }
+  .project_title span {
+    font-size: 46px;
+    bottom: -8px;
+  }
+  .project_btn {
+    font-size: 14px !important;
+  }
+}
 .contact {
-  overflow-x: hidden;
   margin-bottom: 100px;
 }
 .contact_container {
@@ -830,8 +865,17 @@ hr {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.footer {
-  overflow-x: hidden;
+@media only screen and (max-width: 375px) {
+  .contact_container {
+    margin-top: 41px;
+  }
+  .contact_title {
+    font-size: 24px;
+  }
+  .contact_title span {
+    font-size: 46px;
+    bottom: -8px;
+  }
 }
 .footer p {
   background-color: #101010;

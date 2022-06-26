@@ -1,5 +1,5 @@
 .resume {
-  overflow-x: hidden;
+  
   @extend %widthCenter;
   padding-top: 96px;
   background-color: $white;
@@ -252,6 +252,29 @@ hr {
       &_personal {
         .title, p {
           font-size: 12px;
+        }
+      }
+    } 
+  }
+}
+
+@include responsive_375() {
+  .resume {
+    &_skill {
+      &_container {
+        margin-top: 41px;
+      }
+
+      &_title {
+        font-size: 24px;
+      }
+    }
+
+    &_skill, &_education, &_experience {
+      &_title {
+        span {
+          font-size: 46px;
+          bottom: -8px;
         }
       }
     }

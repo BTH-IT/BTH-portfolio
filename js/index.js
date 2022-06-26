@@ -19,17 +19,25 @@ function showPage() {
   document.querySelector(".loaded").style.display = "block";
 }
 
-let flag = false;
+let timeOutId,
+  flag = false;
 
 function handleClick() {
   const navEle = document.querySelector(".header_right");
+  const overlayEle = document.querySelector(".overlay");
   if (flag) {
     flag = !flag;
     navEle.classList.remove("animate__fadeIn");
+    overlayEle.classList.remove("show");
     navEle.classList.add("animate__fadeOut");
+    if (timeOutId) clearTimeout(timeOutId);
+    timeOutId = setTimeout(() => {
+      navEle.classList.remove("show");
+      navEle.classList.remove("animate__fadeOut");
+    }, 700);
   } else {
     flag = !flag;
-    navEle.classList.remove("animate__fadeOut");
+    overlayEle.classList.add("show");
     navEle.classList.add("show");
     navEle.classList.add("animate__fadeIn");
   }
