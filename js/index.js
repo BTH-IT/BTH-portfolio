@@ -19,5 +19,21 @@ function showPage() {
   document.querySelector(".loaded").style.display = "block";
 }
 
+let flag = false;
+
+function handleClick() {
+  const navEle = document.querySelector(".header_right");
+  if (flag) {
+    flag = !flag;
+    navEle.classList.remove("animate__fadeIn");
+    navEle.classList.add("animate__fadeOut");
+  } else {
+    flag = !flag;
+    navEle.classList.remove("animate__fadeOut");
+    navEle.classList.add("show");
+    navEle.classList.add("animate__fadeIn");
+  }
+}
+
 setTimeout(showAnimationLoading, 3000);
 setTimeout(showPage, 3200);
