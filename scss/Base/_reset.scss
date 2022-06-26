@@ -37,5 +37,13 @@ button,
 select,
 label,
 a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+a:focus, a:visited, a:active {
+  outline: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
