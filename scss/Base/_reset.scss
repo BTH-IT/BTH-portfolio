@@ -27,10 +27,6 @@ body {
   overflow-x: hidden;
 }
 
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: transparent;
+a::selection {
+    background-color: transparent;
 } 
