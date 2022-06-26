@@ -82,11 +82,11 @@ body {
   margin: 0;
   position: relative;
   z-index: 9;
+  line-height: 110px;
 }
 .contact_title span, .project_title span, .resume_education_title span, .resume_experience_title span, .resume_skill_title span {
   position: absolute;
-  bottom: -30px;
-  left: -6px;
+  left: 0;
   color: transparent;
   font-weight: 900;
   font-size: 110px;
@@ -452,7 +452,6 @@ body {
   }
 }
 .resume {
-  overflow-x: visible;
   padding-top: 96px;
   background-color: #FFF;
 }
@@ -618,10 +617,10 @@ hr {
   }
   .resume_education_title, .resume_experience_title {
     font-size: 24px;
+    line-height: 54px;
   }
   .resume_education_title span, .resume_experience_title span {
     font-size: 54px;
-    bottom: -12px;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -643,10 +642,10 @@ hr {
   }
   .resume_skill_title {
     font-size: 28px;
+    line-height: 90px;
   }
   .resume_skill_title span {
     font-size: 90px;
-    bottom: -26px;
   }
   .resume_education_container_cell span, .resume_education_container_cell p, .resume_experience_container_cell span, .resume_experience_container_cell p {
     font-size: 12px;
@@ -666,14 +665,13 @@ hr {
   }
   .resume_skill_title {
     font-size: 24px;
+    line-height: 46px;
   }
   .resume_skill_title span, .resume_education_title span, .resume_experience_title span {
     font-size: 46px;
-    bottom: -8px;
   }
 }
 .project {
-  overflow-x: visible;
   width: 80%;
   margin: 126px auto;
 }
@@ -749,10 +747,10 @@ hr {
 @media only screen and (max-width: 575px) {
   .project_title {
     font-size: 28px;
+    line-height: 70px;
   }
   .project_title span {
     font-size: 70px;
-    bottom: -16px;
   }
   .project_btn {
     margin-right: 0;
@@ -778,17 +776,16 @@ hr {
   }
   .project_title {
     font-size: 24px;
+    line-height: 46px;
   }
   .project_title span {
     font-size: 46px;
-    bottom: -8px;
   }
   .project_btn {
     font-size: 14px !important;
   }
 }
 .contact {
-  overflow-x: visible;
   margin-bottom: 100px;
 }
 .contact_container {
@@ -857,10 +854,10 @@ hr {
 @media only screen and (max-width: 768px) {
   .contact_title {
     font-size: 28px;
+    line-height: 60px;
   }
   .contact_title span {
     font-size: 60px;
-    bottom: -12px;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -874,10 +871,10 @@ hr {
   }
   .contact_title {
     font-size: 24px;
+    line-height: 46px;
   }
   .contact_title span {
     font-size: 46px;
-    bottom: -8px;
   }
 }
 .footer p {

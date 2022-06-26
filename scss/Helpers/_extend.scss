@@ -21,10 +21,10 @@
   margin: 0;
   position: relative;
   z-index: 9;
+  line-height: 110px;
   span {
     position: absolute;
-    bottom: -30px;
-    left: -6px;
+    left: 0;
     @include fontStyle(110px, transparent, 900);
     opacity: 0.2;
     line-height: 1;

@@ -1,5 +1,4 @@
 .contact {
-  overflow-x: visible;
   @extend %widthCenter;
   margin-bottom: 100px;
   &_title {
@@ -86,9 +85,9 @@
   .contact {
     &_title {
       font-size: 28px;
+      line-height: 60px;
       span {
         font-size: 60px;
-        bottom: -12px;
       }
     }
   }
@@ -110,9 +109,9 @@
 
     &_title {
       font-size: 24px;
+      line-height: 46px;
       span {
         font-size: 46px;
-        bottom: -8px;
       }
     }
   }
