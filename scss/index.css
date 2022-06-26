@@ -452,6 +452,7 @@ body {
   }
 }
 .resume {
+  overflow-x: visible;
   padding-top: 96px;
   background-color: #FFF;
 }
