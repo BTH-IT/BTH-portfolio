@@ -1,4 +1,5 @@
 .resume {
+  overflow-x: hidden;
   @extend %widthCenter;
   padding-top: 96px;
   background-color: $white;
@@ -266,12 +267,13 @@ hr {
 
       &_title {
         font-size: 24px;
-        line-height: 46px;
+        
       }
     }
 
     &_skill, &_education, &_experience {
       &_title {
+        line-height: 46px;
         span {
           font-size: 46px;
         }
