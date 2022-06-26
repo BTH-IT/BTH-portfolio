@@ -27,6 +27,15 @@ body {
   overflow-x: hidden;
 }
 
-a::selection {
-    background-color: transparent;
-} 
+::selection {
+    background-color: red;
+}
+
+input,
+textarea,
+button,
+select,
+label,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
