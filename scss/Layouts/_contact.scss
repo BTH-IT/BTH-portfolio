@@ -1,5 +1,5 @@
 .contact {
-  
+  overflow-x: hidden;
   @extend %widthCenter;
   margin-bottom: 100px;
   &_title {
@@ -107,7 +107,7 @@
     &_container {
       margin-top: 41px;
     }
-    
+
     &_title {
       font-size: 24px;
       span {

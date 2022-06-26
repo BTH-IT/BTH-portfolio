@@ -786,6 +786,7 @@ hr {
   }
 }
 .contact {
+  overflow-x: hidden;
   margin-bottom: 100px;
 }
 .contact_container {
