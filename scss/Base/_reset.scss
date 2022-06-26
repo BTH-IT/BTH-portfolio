@@ -2,7 +2,6 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 ::selection {
@@ -19,5 +18,6 @@ body {
   padding: 0;
   line-height: 1.3;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
   cursor: none;
 }
