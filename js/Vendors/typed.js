@@ -5,9 +5,9 @@ const typed = new Typed(".auto-typed", {
   loop: true,
   smartBackspace: true,
   onStringTyped: function(index, self) {
-    if (self.strings[index] === "Bien Thanh Hung") {
+    if (index === 0) {
       self.el.innerHTML = '<span style="color: blue;">' + self.strings[index] + '</span>';
-    } else if (self.strings[index] === "Frontend Developer") {
+    } else if (index === 1) {
       self.el.innerHTML = '<span style="color: red;">' + self.strings[index] + '</span>';
     }
   }
